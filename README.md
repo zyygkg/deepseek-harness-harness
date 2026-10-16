@@ -176,3 +176,32 @@ install_bundle 目标: file:D:/path/to/deepseek-harness-harness
 - 发布 npm 时走 npmjs registry（`publishConfig.access` 建议显式声明）；无 scope 包名存在被抢注风险，可考虑 `@your-scope/deepseek-harness-harness`（DSH 的 `install_bundle` 对 scope 包名无限制，注意 cordis.patch.yml 里的 `name` 必须与发布包名一致）。
 - 本插件 peer 依赖仅 `@deepseek-ai/schemastery`（optional）：任何安装环境都不会因缺 peer 而拒绝安装；`@deepseek-ai/dsh-tools`/`@deepseek-ai/cordis` 由 DSH 运行时提供，不要把它们写进 dependencies。
 - 当前版本已在 DSH 0.2.0-rc.2 验证；若未来 DSH 升级导致激活失败，先看插件管理日志里的 `application: failed` 诊断（常见为 schema/模块缓存两类问题，处理方式见上文）。
+
+## 致谢
+
+### 项目命名：[@yyxxyy511](https://github.com/yyxxyy511)
+
+本插件最初叫 `dsh-webdeepseek` —— 一个平平无奇、看完就忘的名字。
+
+是 **[@yyxxyy511](https://github.com/yyxxyy511)** 提出了 `deepseek-harness-harness`。
+从此这个项目有了两个 harness、一句读不完的绕口令、一个所有人都念不对的缩写（DSHSH），
+以及一个每次都要向别人解释自己名字的开场白。
+
+> **没有这个名字，这里只是一个 DeepSeek 转接器；**
+> **有了它，这里成了一个需要反复解释自己名字的项目。**
+
+按照本项目的精神，他的名字也应该这样念：
+
+```
+DeepSeek Harness 的
+　　deepseek-harness-harness 的
+　　　　DeepSeek Harness 的
+　　　　　　yyxxyy511 的
+　　　　　　　　deepseek-harness-harness 的……
+```
+
+（可以一直读下去）
+
+### 其他
+
+- **[@zyygkg](https://github.com/zyygkg)** —— 插件实现、文档与发布

@@ -3,6 +3,13 @@
   "version": "0.1.0",
   "description": "DSHSH — a harness that harnesses your harness (harness 的 harness)。把用户原始要求交给免费网页版 DeepSeek 求解，返回给 DSH agent 执行。",
   "license": "MIT",
+  "author": "zyygkg (https://github.com/zyygkg)",
+  "contributors": [
+    {
+      "name": "yyxxyy511",
+      "url": "https://github.com/yyxxyy511"
+    }
+  ],
   "type": "module",
   "main": "lib/index.mjs",
   "types": "lib/index.d.mts",
