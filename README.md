@@ -102,9 +102,13 @@ schtasks /Run /TN "BSK Daemon"
 install_bundle target: deepseek-harness-harness
 ```
 
-### 方式 B：本地目录 / GitHub clone
+### 方式 B：从 GitHub clone 后本地安装（推荐，当前最稳妥）
 
-克隆仓库后，通过 DeepSeek Harness 的插件管理安装本地目录：
+```bash
+git clone https://github.com/zyygkg/deepseek-harness-harness.git
+```
+
+然后在 DeepSeek Harness 的插件管理中安装本地目录（把路径换成你自己的 clone 位置）：
 
 ```
 install_bundle 目标: file:D:/path/to/deepseek-harness-harness
