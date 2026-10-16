@@ -1,0 +1,7 @@
+# Your patch layer for this bundle, applied after every other bundle layer:
+# a top-level YAML array of loader patch entries.
+- insert:
+    - id: webdeepseek
+      # Must be the published package name — the loader imports this specifier.
+      # Quoted because YAML reserves a leading '@' in plain scalars.
+      name: "deepseek-harness-harness"

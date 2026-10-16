@@ -1,0 +1,44 @@
+{
+  "name": "deepseek-harness-harness",
+  "version": "0.1.0",
+  "description": "DSHSH — a harness that harnesses your harness (harness 的 harness)。把用户原始要求交给免费网页版 DeepSeek 求解，返回给 DSH agent 执行。",
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.mjs",
+  "types": "lib/index.d.mts",
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.mts",
+      "default": "./lib/index.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "dshsh",
+    "harness-harness",
+    "harness-of-harnesses",
+    "web-deepseek",
+    "browser-automation",
+    "free-deepseek"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/schemastery": "^3.18.2"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/schemastery": {
+      "optional": true
+    }
+  }
+}

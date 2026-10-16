@@ -1,0 +1,4 @@
+# Normalize line endings for cross-platform checkout
+* text=auto eol=lf
+*.bat text eol=crlf
+*.cmd text eol=crlf

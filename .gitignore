@@ -1,0 +1,16 @@
+# Dependencies (installed per-profile by DeepSeek Harness, never committed)
+node_modules/
+
+# Logs / temp
+*.log
+*.tmp
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local env
+.env
+.env.local
